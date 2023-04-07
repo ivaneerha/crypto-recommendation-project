@@ -107,9 +107,9 @@ public class CryptoService {
         double minPrice = getMinPrice(cryptoDataList);
         double maxPrice = getMaxPrice(cryptoDataList);
 
-        for(CryptoData data : cryptoDataList) {
+        for (CryptoData data : cryptoDataList) {
             double price = data.getPrice();
-            double normalizedRangeForACrypto = ((price-minPrice)/(maxPrice-minPrice));
+            double normalizedRangeForACrypto = ((price - minPrice) / (maxPrice - minPrice));
             data.setNormalisedRange(normalizedRangeForACrypto);
         }
     }

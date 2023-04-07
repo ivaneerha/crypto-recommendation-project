@@ -22,8 +22,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
+
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = { Application.class })
+@ContextConfiguration(classes = {Application.class})
 public class CryptoControllerTest {
 
     private final CsvParser csvParser = new CsvParser();

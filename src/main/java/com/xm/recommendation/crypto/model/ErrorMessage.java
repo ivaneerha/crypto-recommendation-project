@@ -13,7 +13,9 @@ import java.time.LocalDateTime;
 public class ErrorMessage {
 
     private String message;
+
     private int status;
+
     private LocalDateTime time;
 
 }
